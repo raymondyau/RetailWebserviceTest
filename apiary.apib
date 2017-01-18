@@ -1,37 +1,9 @@
 FORMAT: 1A
 HOST: http://polls.apiblueprint.org/
 
-# Retail API
+# Retail Webservice API
 
 Polls is a simple API allowing consumers to view polls and vote in them.
-
-## Questions Collection [/questions]
-
-### List All Questions [GET]
-
-+ Response 200 (application/json)
-
-        [
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 2048
-                    }, {
-                        "choice": "Python",
-                        "votes": 1024
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 512
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 256
-                    }
-                ]
-            }
-        ]
 
 ### Application Quote [POST]
 
@@ -42,39 +14,121 @@ form of choices.
 + Request (application/json)
 
         {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
+        "amount": "2354.85",
+        "cashDeposit": "0.0",
+        "proposalNo": "MPD41452",
+        "term": "36",
+        "joint": "false",
+        "instance": "retail",
+        "receiveMarketing": "false",
+        "loanType": "U",
+        "purpose": "BTL",
+        "appStatus": "New",
+        "appSubStatus": "None",
+        "sourceCode": "RT",
+        "onsData": [{
+                "appjEmployment": "E",
+                "appjIncome": "15000.00"
+        }],
+        "applicants": [{
+                "title": "Mrs",
+                "firstname": "Ewart",
+                "surname": "Dunnage",
+                "joint": "P",
+                "gender": "M",
+                "middlename": "",
+                "dateOfBirth": "02/11/1970",
+                "grossPay": "12000",
+                "rank": 1,
+                "grossPayMonthly": "",
+                "type": "S",
+                "years": "1",
+                "nationality": "UNITED KINGDOM",
+                "mobilePhone": "07444444444",
+                "residentialStatus": "M",
+                "workPhone": "",
+                "homePhone": "01611111111",
+                "dependents": "1",
+                "maritalStatus": "M",
+                "email": "test@freedom-finance.com",
+                "employments": [{
+                    "netPay": "",
+                    "netPayMonthly": "1000",
+                    "months": "6",
+                    "grossPay": "12000",
+                    "rank": 1,
+                    "grossPayMonthly": "",
+                    "type": "S",
+                    "years": "1",
+                    "address": {
+                    "houseNo": "20",
+                    "houseName": "",
+                    "street": "Test Street",
+                    "posttown": "Test Town",
+                    "country": "United Kingdom",
+                    "postcode": "BA133BN",
+                    "county": "CHESHIRE",
+                    "years": "1",
+                    "months": "6"
+                    }
+                }],
+                "bankDetails": [{
+                    "months": "0",
+                    "accountName": "Mr E Dunnage",
+                    "accountNumber": "000123456",
+                    "years": "18",
+                    "sortcode": "303030"
+                 }],
+                 "applicant_addresses": [{
+                    "address": {
+                        "houseNo": "37",
+                        "houseName": "",
+                        "street": "Monopoly Close",
+                        "posttown": "Test Town",
+                        "country": "United Kingdom",
+                        "postcode": "X98HJ",
+                        "county": "CHESHIRE",
+                        "years": "20",
+                        "months": "10"
+                    },
+                    "rank": 1,
+                    "type": "C"
+                 }],
+                "otherIncomes": [{
+                    "income": "80",
+                    "rank": 1,
+                    "description": "TOT"
+                }],
+                "proof": [{
+                    "type": "PPT",
+                    "reference": "123456789"
+                }]
+        }],
+        "products":[
+            {"description": "Samsung Galaxy S7"},
+            {"description": "Samsung Wireless Charger"}
+        ],
+        } 
 
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
++ Response 200 (application/json)
 
     + Body
 
             {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
+
+            "submissions": {
+                "actualApr": 29.9,
+                "dateCreated": "2016-10-18T13:51:25Z",
+                "id": 2084,
+                "lenderCode": "hcb",
+                "lenderName": "Test Finance",
+                "lenderReference": "1891",
+                "notes": "",
+                "submissionStatus": "ACCEPT",
+                "loanTerm": "24",
+                "monthlyRepayment": "37.87",
+                "totalRepayable": "908.88",
+                "totalCostOfCredit": "208.88"
+            }
+
             }
