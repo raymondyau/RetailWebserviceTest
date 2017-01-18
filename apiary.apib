@@ -16,101 +16,134 @@ form of choices.
 + Request (application/json)
 
         {
-        "amount": "2354.85",
-        "cashDeposit": "0.0",
-        "proposalNo": "MPD41452",
-        "term": "36",
-        "joint": "false",
-        "instance": "retail",
-        "receiveMarketing": "false",
-        "loanType": "U",
+        "proposalNo": "BG375060",
+        "amount":"6500",
+        "term": "60",
         "purpose": "BTL",
-        "appStatus": "New",
-        "appSubStatus": "None",
-        "sourceCode": "RT",
-        "onsData": [{
-                "appjEmployment": "E",
-                "appjIncome": "15000.00"
-        }],
+        "joint": false,
+        "receiveMarketing": true,
+        "sourceCode": "BG",
+        "instance": "britishgas",
+        "loanType": "U",
+        "clientIP": "172.17.0.106",
+        "appStatus": "NEW",
+        "appSubStatus": "NONE",            
+        "thirdPartyReference":"46968",
         "applicants": [{
-                "title": "Mrs",
-                "firstname": "Ewart",
-                "surname": "Dunnage",
-                "joint": "P",
-                "gender": "M",
-                "middlename": "",
-                "dateOfBirth": "02/11/1970",
-                "grossPay": "12000",
-                "rank": 1,
-                "grossPayMonthly": "",
-                "type": "S",
-                "years": "1",
-                "nationality": "UNITED KINGDOM",
-                "mobilePhone": "07444444444",
-                "residentialStatus": "M",
-                "workPhone": "",
-                "homePhone": "01611111111",
-                "dependents": "1",
-                "maritalStatus": "M",
-                "email": "test@freedom-finance.com",
-                "employments": [{
-                    "netPay": "",
-                    "netPayMonthly": "1000",
-                    "months": "6",
-                    "grossPay": "12000",
-                    "rank": 1,
-                    "grossPayMonthly": "",
-                    "type": "S",
-                    "years": "1",
-                    "address": {
-                    "houseNo": "20",
-                    "houseName": "",
-                    "street": "Test Street",
-                    "posttown": "Test Town",
-                    "country": "United Kingdom",
-                    "postcode": "BA133BN",
-                    "county": "CHESHIRE",
-                    "years": "1",
-                    "months": "6"
-                    }
-                }],
-                "bankDetails": [{
-                    "months": "0",
-                    "accountName": "Mr E Dunnage",
-                    "accountNumber": "000123456",
-                    "years": "18",
-                    "sortcode": "303030"
-                 }],
-                 "applicant_addresses": [{
-                    "address": {
-                        "houseNo": "37",
-                        "houseName": "",
-                        "street": "Monopoly Close",
-                        "posttown": "Test Town",
-                        "country": "United Kingdom",
-                        "postcode": "X98HJ",
-                        "county": "CHESHIRE",
-                        "years": "20",
-                        "months": "10"
-                    },
-                    "rank": 1,
-                    "type": "C"
-                 }],
-                "otherIncomes": [{
-                    "income": "80",
-                    "rank": 1,
-                    "description": "TOT"
-                }],
-                "proof": [{
-                    "type": "PPT",
-                    "reference": "123456789"
-                }]
+                        "joint": "P",
+                        "title": "Ms",
+                        "firstname": "Ewart",
+                        "middlename": "",
+                        "surname": "Dunnage",
+                        "dateOfBirth": "06/01/1980",
+                        "gender": "M",
+                        "maritalStatus": "S",
+                        "dependents": "1",
+                        "dependentsList": "2",
+                        "email": "ittestingteam@freedom-finance.com",
+                        "homePhone": "01611111111",
+                        "workPhone": "",
+                        "mobilePhone": "07234567890",
+                        "residentialStatus": "M",
+                        "nationality": "BRITISH",
+                        "ukResident": "true",
+                        "ukCitizen": "true",
+                        "over25": "true",
+                        "applicant_addresses": [{
+                                        "address": {
+                                                        "houseNo": "37",
+                                                        "street": "Monopoly Close",
+                                                        "posttown": "test town",
+                                                        "county": "",
+                                                        "postcode": "X98HJ",
+                                                        "country": "United Kingdom",
+                                                        "years": "5",
+                                                        "months": "7",
+                                                        "equifax_key": "",
+                                                        "locality": ""
+                                        },
+                                        "type": "C",
+                                        "rank": "1"
+                        }, {
+                                "address": {
+                                    "houseNo": "37",
+                                    "street": "Monopoly Close",
+                                    "posttown": "test town",
+                                    "county": "",
+                                    "postcode": "X98HJ",
+                                    "country": "United Kingdom",
+                                    "years": 20,
+                                    "months": 7,
+                                    "equifax_key": ""
+                            },
+                            "type": "P",
+                            "rank": "2"
+                        }],
+                        "employments": [{
+                            "type": "E",
+                            "years": "20",
+                            "months": "8",
+                            "grossPayMonthly": "",
+                            "netPay": "",
+                            "selfEmployed": "false",
+                            "fullContract": "N",
+                            "rank": "1",
+                            "netPayMonthly": 8500,
+                            "grossPay": "100000",
+                            "address": {
+                                            "houseNo": "20",
+                                            "street": "Test Street",
+                                            "posttown": "Town Town",
+                                            "county": "CHESHIRE",
+                                            "postcode": "BA133BN",
+                                            "country": "UNITED KINGDOM",
+                                            "years": "6",
+                                            "months": "0"
+                            }
+                        }],
+                        
+                        "otherIncomes": [{
+                                        "description": "SES",
+                                        "income": 693,
+                                        "rank": "1"                          
+                        }, {
+                                        "description": "TOT",
+                                        "income": 239,
+                                        "rank": 2
+                        }],           
+                        
+                        "proof": [{
+                                        "type": "PPT",
+                                        "reference": "123456789"
+                        }],
+                                        
+                        "bankDetails": [{
+                                        "accountName": "Mr E Dunnage",
+                                        "accountNumber": "11111111",
+                                        "accountBranch": "TEST BRANCH",
+                                        "years": 15,
+                                        "months": 0,
+                                        "bankName": "LloydsTSB",
+                                        "sortcode": "301122",
+                                        "directDebitDate": "29/08/2016",
+                                        "street": "Test Street",
+                                        "locality": "Test Locality",
+                                        "posttown": "Test Town",
+                                        "county": "CHESHIRE",
+                                        "postcode": ""
+        }]
+        
+        }],           
+        "onsData": [{
+                        "appjEmployment": "H",
+                        "appjIncome": 2340.20
         }],
-        "products":[
-            {"description": "Samsung Galaxy S7"},
-            {"description": "Samsung Wireless Charger"}
-        ],
-        } 
+
+        "initialCode": "001",
+        "initialStatus": "",
+        "cashDeposit": "756.90"
+        }
+
 + Response 200 (text/html;charset=utf-8)
 
             {
